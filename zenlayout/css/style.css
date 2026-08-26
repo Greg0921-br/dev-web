@@ -1,0 +1,175 @@
+/* === IMPORTAÇÃO DE FONTES */
+
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+/*
+Fontes Disponíveis:
+// Sugiro usar esta 
+font-family: "Urbanist", sans-serif; 
+font-family: "Fredoka", sans-serif;
+font-family: "Epilogue", sans-serif;
+font-family: "Nunito", sans-serif;
+font-family: "Oswald", sans-serif;
+*/
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+html {
+  font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
+  font-family: "Nunito", sans-serif;
+}
+
+/* ==== HEADER === */
+
+header {
+  color: white;
+  background-color: #d08aa5;
+  text-align: center;
+  padding: 3vw;
+}
+
+header nav ul li {
+  padding: 2vw;
+}
+
+/* ==== PRNCIPAL === */
+
+.principal {
+  background-color: #d08aa5;
+  color: white;
+  text-align: center;
+}
+
+.principal h1 {
+  font-size: 2rem;
+  margin-bottom: 3vw;
+  font-weight: bold;
+}
+
+.principal h1 span {
+  border-bottom: 3px solid;
+}
+
+.principal button {
+  color: black;
+  background-color: white;
+  margin: 6vw;
+  padding: 2vw 5vw;
+  border-radius: 10px;
+}
+
+/* ==== CARDS === */
+
+.cards {
+  background-color: #f0d8e1;
+  display: flex;
+  gap: 30px;
+}
+
+.cards p,
+.about p {
+  color: rgb(94, 93, 92);
+}
+.cards ul li {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.cards h3 {
+  font-weight: bold;
+}
+
+.cards ul li .link-1 {
+  color: #e668b3;
+}
+
+.cards ul li .link-2 {
+  color: #68cde6;
+}
+
+.cards ul li .link-3 {
+  color: #f78b77;
+}
+
+/* ==== ABOUT === */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about .titulo {
+  display: flex;
+  flex-direction: column;
+}
+
+.about .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about .texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.about .titulo h3 {
+  font-size: 0.8rem;
+  color: rgb(94, 93, 92);
+  margin: 10px;
+}
+
+.about .titulo h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #383744;
+}
+
+.about .texto h4 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #383744;
+}
+
+.about img {
+  margin: 20px;
+}
+
+.about button {
+  color: white;
+  background-color: #e668b3;
+  margin: 6vw;
+  padding: 2vw 5vw;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #d08aa5;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+footer ul {
+  display: flex;
+  gap: 10px;
+}
+
+/* MEDIA QUERY - DESKTOP */
+@media screen and (min-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  header ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
