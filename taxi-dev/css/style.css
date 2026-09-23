@@ -1,0 +1,180 @@
+html {
+  font-size: clamp(1rem, calc(0.5rem + 0.8vw), 4rem);
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 3vw 5vw 3vw 5vw;
+}
+header nav ul {
+  margin: 10px 0px 10px 0px;
+}
+
+header nav ul li {
+  margin: 10px 0px 10px 0px;
+  padding: 3px;
+}
+
+header nav ul li.fonte-amarelo {
+  color: #fbbc05;
+}
+header nav ul li.botao-amarelo a {
+  color: white;
+  background-color: #fbbc05;
+  padding: 6px 16px 6px 16px;
+  border-radius: 4px;
+}
+main section.banner {
+  background: url(../images/background-banner.png) no-repeat;
+  background-size: 100% auto;
+  padding: 3vw 5vw 3vw 5vw;
+}
+
+section.banner div.imagem {
+  display: none;
+}
+
+section.banner div h2 {
+    font-size: 30px;
+}
+
+section.banner div p {
+    font-size: 20px;
+}
+
+
+section.banner {
+    font-size: 1.8rem;
+}
+
+section.banner p a {
+    background: #252b42;
+    display: inline-block;
+    padding: 6px 12px 6px 12px;
+    border-radius: 7px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+section.banner p {
+    display: flex;
+    gap: 12px;
+    margin: 8px 0 0 0
+}
+
+section.banner p img {
+    height: 1rem;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+section.ready div.imagem {
+    display: none;
+}
+
+section.ready {
+    text-align: center;
+    padding: 3vw 5vw 3vw 5vw;
+}
+
+section.ready h2 {
+    color: #252b42;
+    font-size: 1.9rem;
+}
+
+section.ready p {
+    color: gray;
+}
+
+section.ready ul li {
+    margin: 15px 0 15px 0;
+}
+
+section.ready ul li h3 {
+    font-weight: bolder;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    align-items: center;
+  }
+  header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  header nav ul li a:hover {
+    color: #9f9f00;
+  }
+  header nav ul li.fonte-amarelo {
+    color: black;
+  }
+  header nav ul li.botao-amarelo a:hover {
+    background: none;
+    border: 3px solid #fbbc05;
+  }
+  section.banner div.imagem {
+  display: block;
+}
+
+section.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.banner div.imagem img {
+    height: 40vw;
+}
+
+
+section.banner div h2 {
+    font-size: 40px;
+    padding: 0 0 15px 0;
+}
+
+section.ready h2 {
+    font-size: 1.8rem;
+}
+
+section.ready p.para {
+    font-size: 20px;
+}
+
+section.ready div.imagem {
+    display: block;
+    padding-top: 100px;
+}
+
+section.ready >div {
+    display: flex;
+}
+
+section.ready div.lista ul {
+    display: flex;
+    gap: 5vw;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-top: 90px;
+}
+
+section.ready div.lista ul li {
+    width: 40%;
+}
+
+section.ready div div {
+    width: 50%;
+}
+
+}
+
+
